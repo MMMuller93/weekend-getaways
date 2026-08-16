@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Weekend Getaways</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="ext-resource-dependency" content="img/cat1.webp">
+<meta name="ext-resource-dependency" content="img/kaat.webp">
+<meta name="ext-resource-dependency" content="img/cat3.webp">
+<meta name="ext-resource-dependency" content="img/tann.webp">
+<meta name="ext-resource-dependency" content="img/scat.webp">
+<meta name="ext-resource-dependency" content="img/v_kaat.webp">
+<meta name="ext-resource-dependency" content="img/v_cole.webp">
+<meta name="ext-resource-dependency" content="img/v_tann.webp">
+<meta name="ext-resource-dependency" content="img/v_catmtn.webp">
+<meta name="ext-resource-dependency" content="img/v_ambrosia.webp">
+<meta name="ext-resource-dependency" content="img/wg_rainbow.png">
+<meta name="ext-resource-dependency" content="img/wg1.webp">
+<meta name="ext-resource-dependency" content="img/wg2.webp">
+<meta name="ext-resource-dependency" content="img/wg3.webp">
+<meta name="ext-resource-dependency" content="img/swg.webp">
+<meta name="ext-resource-dependency" content="img/v_wgsp.webp">
+<meta name="ext-resource-dependency" content="img/v_grisch.webp">
+<meta name="ext-resource-dependency" content="img/v_shs.webp">
+<meta name="ext-resource-dependency" content="img/v_jerl.webp">
+<meta name="ext-resource-dependency" content="img/zion1.webp">
+<meta name="ext-resource-dependency" content="img/zion2.webp">
+<meta name="ext-resource-dependency" content="img/zion3.webp">
+<meta name="ext-resource-dependency" content="img/zion4.webp">
+<meta name="ext-resource-dependency" content="img/sz1.webp">
+<meta name="ext-resource-dependency" content="img/sz2.webp">
+<meta name="ext-resource-dependency" content="img/sz3.webp">
+<meta name="ext-resource-dependency" content="img/sz4.webp">
+<meta name="ext-resource-dependency" content="img/sz5.webp">
+<meta name="ext-resource-dependency" content="img/v_narrows.webp">
+<meta name="ext-resource-dependency" content="img/v_cover.webp">
+<meta name="ext-resource-dependency" content="img/v_springdale.webp">
+<meta name="ext-resource-dependency" content="img/paris_opera.png">
+<meta name="ext-resource-dependency" content="img/paris1.webp">
+<meta name="ext-resource-dependency" content="img/paris_louvre.png">
+<meta name="ext-resource-dependency" content="img/paris3.webp">
+<meta name="ext-resource-dependency" content="img/v_orsay.webp">
+<meta name="ext-resource-dependency" content="img/v_sacre.jpg">
+<meta name="ext-resource-dependency" content="img/v_chapelle.jpg">
+<meta name="ext-resource-dependency" content="img/v_lux.webp">
+<meta name="ext-resource-dependency" content="img/v_flore.jpg">
+<meta name="ext-resource-dependency" content="img/v_baron.jpg">
+<meta name="ext-resource-dependency" content="img/v_breizh.jpg">
+<meta name="ext-resource-dependency" content="img/ct1.webp">
+<meta name="ext-resource-dependency" content="img/ct2.webp">
+<meta name="ext-resource-dependency" content="img/ct3.webp">
+<meta name="ext-resource-dependency" content="img/ct4.webp">
+<meta name="ext-resource-dependency" content="img/sct.webp">
+<meta name="ext-resource-dependency" content="img/v_mystic.webp">
+<meta name="ext-resource-dependency" content="img/v_rocky.webp">
+<meta name="ext-resource-dependency" content="img/v_bookbarn.webp">
+<meta name="ext-resource-dependency" content="img/v_hark.webp">
+<meta name="ext-resource-dependency" content="img/v_niantic.webp">
+<meta name="ext-resource-dependency" content="img/v_otw.webp">
+<meta name="ext-resource-dependency" content="img/v_pauls.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500&family=Newsreader:ital,opsz,wght@0,6..72,200;0,6..72,300;0,6..72,400;1,6..72,200;1,6..72,300&display=swap" rel="stylesheet">
+<style>
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; background: #0D171E; }
+  body { margin: 0; background: #0D171E; color: #D7D3CC; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; overflow-x: hidden; }
+  * { box-sizing: border-box; }
+  img { display: block; max-width: 100%; }
+  a { color: #86A8C1; text-decoration: none; }
+  a:hover { color: #C9D8E2; }
+  ::selection { background: #86A8C1; color: #0D171E; }
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-track { background: #0D171E; }
+  ::-webkit-scrollbar-thumb { background: #2A4152; }
+  @keyframes drift { from { transform: translate3d(0,0,0); } to { transform: translate3d(-50%,0,0); } }
+  @keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes lbin { from { opacity: 0; transform: scale(0.985); } to { opacity: 1; transform: none; } }
+  @keyframes hint { 0%, 100% { transform: translateY(0); opacity: .45; } 50% { transform: translateY(6px); opacity: .9; } }
+  @keyframes aurora { 0% { transform: translate3d(-4%, -2%, 0) scale(1.05); } 50% { transform: translate3d(5%, 3%, 0) scale(1.14); } 100% { transform: translate3d(-4%, -2%, 0) scale(1.05); } }
+
+  body::after { content: ""; position: fixed; inset: 0; z-index: 45; pointer-events: none; opacity: .16; mix-blend-mode: overlay; background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxODAiIGhlaWdodD0iMTgwIj48ZmlsdGVyIGlkPSJuIj48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iMC44NSIgbnVtT2N0YXZlcz0iMyIvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSIxODAiIGhlaWdodD0iMTgwIiBmaWx0ZXI9InVybCgjbikiIG9wYWNpdHk9IjAuNDUiLz48L3N2Zz4="); }
+
+  [data-item]:hover [data-item-name] { color: #F0EEEB; }
+  [data-item]:hover [data-item-thumb] { filter: brightness(1.06) saturate(1.04); transform: scale(1.05); }
+  [data-row]:hover [data-rownum] { color: #86A8C1; }
+  [data-row]:hover [data-rowname] { color: #FFFFFF; }
+  [data-dot]:hover [data-dot-label] { opacity: 1; transform: translateX(0); }
+
+  @media (hover: none), (pointer: coarse) { [data-peek] { display: none !important; } }
+  @media (max-width: 1240px) { [data-dots] { display: none !important; } }
+
+  @media (max-width: 900px) {
+    [data-rail] { padding-left: 22px !important; padding-right: 22px !important; }
+    [data-hero] { height: 64svh !important; min-height: 420px !important; }
+    [data-panel] { flex: 0 0 152px !important; }
+    [data-cap] { top: 16px !important; left: 12px !important; right: 10px !important; }
+    [data-cap] b { font-size: 16px !important; }
+    [data-cap] em { font-size: 10px !important; margin-top: 5px !important; }
+    [data-masthead] { padding-bottom: 28px !important; }
+    [data-idxhead] { display: none !important; }
+    [data-idxrow] { grid-template-columns: 1fr !important; gap: 6px 0 !important; padding: 20px 0 !important; }
+    [data-idxrow] [data-rownum] { display: none !important; }
+    [data-idxtime] { order: 3; }
+    [data-cols2] { grid-template-columns: 1fr !important; gap: 44px !important; margin-top: 40px !important; }
+    [data-mosaic] { grid-template-columns: 1fr !important; height: auto !important; gap: 8px !important; }
+    [data-mbig] { aspect-ratio: 4/3; }
+    [data-mstack] { grid-template-rows: auto auto !important; gap: 8px !important; }
+    [data-mcell] { aspect-ratio: 16/9; }
+    [data-mpair] { gap: 8px !important; }
+    [data-mpair] > * { aspect-ratio: 1/1; }
+    [data-mosaic][data-b] > [data-mbig] { order: -1; }
+    [data-sechead] { gap: 18px !important; }
+    [data-sechead] [data-meta] { gap: 28px !important; }
+    [data-ghost] { display: none !important; }
+    [data-item] { grid-template-columns: 60px minmax(0,1fr) auto !important; gap: 13px !important; }
+    [data-item] [data-thumbwrap] { width: 60px !important; height: 46px !important; }
+    [data-sec] { padding-top: 80px !important; }
+    [data-map] iframe { aspect-ratio: 4/3 !important; }
+    [data-foot] { grid-template-columns: 1fr !important; gap: 14px !important; }
+    [data-plate] { padding: 22px 16px !important; margin-top: 22px !important; }
+    [data-lb] { padding: 56px 12px 96px !important; }
+  }
+</style>
+</helmet>
+<div style="background: #0D171E; color: #D7D3CC; font-family: 'Inter Tight', system-ui, sans-serif; font-size: 18.4px; position: relative;">
+
+  <div style="position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; background: linear-gradient(168deg, #1A2B38 0%, #16242F 24%, #122029 48%, #101C24 74%, #0D171E 100%);">
+    <div style="position: absolute; inset: -25%; background: radial-gradient(44% 38% at 16% 12%, rgba(122,182,214,.55), rgba(122,182,214,0) 66%), radial-gradient(46% 40% at 88% 24%, rgba(233,176,116,.34), rgba(233,176,116,0) 66%), radial-gradient(60% 50% at 66% 84%, rgba(74,140,168,.45), rgba(74,140,168,0) 68%), radial-gradient(44% 38% at 4% 68%, rgba(198,124,92,.26), rgba(198,124,92,0) 68%); filter: blur(56px); animation: aurora 52s ease-in-out infinite;"></div>
+    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(9,15,20,.06) 0%, rgba(9,15,20,.2) 48%, rgba(9,15,20,.34) 100%);"></div>
+    <div style="position: absolute; inset: 0; box-shadow: inset 0 0 170px 0 rgba(4,8,11,.4);"></div>
+    <div style="position: absolute; top: 0; bottom: 0; left: 50%; transform: translateX(-50%); width: 1180px; max-width: 100%; border-left: 1px solid rgba(240,238,235,.075); border-right: 1px solid rgba(240,238,235,.075); background: linear-gradient(90deg, rgba(240,238,235,.045) 0%, rgba(240,238,235,.008) 16%, rgba(240,238,235,0) 50%, rgba(240,238,235,.008) 84%, rgba(240,238,235,.045) 100%);"></div>
+    <div style="position: absolute; inset: 0; opacity: .5; background-image: repeating-linear-gradient(90deg, rgba(240,238,235,.028) 0 1px, rgba(240,238,235,0) 1px 148px);"></div>
+  </div>
+
+  <div style="position: relative; z-index: 1;">
+
+    <section data-hero style="position: relative; height: min(88vh, 800px); min-height: 520px; overflow: hidden;">
+      <div ref="{{ parallaxRef }}" style="position: absolute; top: 0; left: 0; right: 0; bottom: -16%; will-change: transform;">
+        <div onMouseEnter="{{ pauseBand }}" onMouseLeave="{{ resumeBand }}" ref="{{ bandRef }}" style="display: flex; height: 100%; width: max-content; gap: 2px; animation: drift 88s linear infinite; will-change: transform;">
+          <sc-for list="{{ band }}" as="p" hint-placeholder-count="10">
+            <a href="{{ p.href }}" data-panel style="position: relative; display: block; flex: 0 0 clamp(200px, 19vw, 320px); height: 100%; overflow: hidden; text-decoration: none;">
+              <img src="{{ p.img }}" alt="{{ p.name }}" style="width: 100%; height: 100%; object-fit: cover; filter: saturate(1.04) brightness(0.98) contrast(1.02); transform: scale(1.02); transition: filter 800ms ease, transform 1400ms cubic-bezier(0.16,0.8,0.28,1);" style-hover="filter: saturate(1.12) brightness(1.08) contrast(1.03); transform: scale(1.075);">
+              <span style="position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(9,15,20,.88) 0, rgba(9,15,20,.14) 32%, rgba(9,15,20,0) 58%); pointer-events: none;"></span>
+              <span data-cap style="position: absolute; left: 18px; right: 14px; top: 74px; z-index: 2;">
+                <b style="display: block; font-family: Newsreader, Georgia, serif; font-weight: 300; font-size: 22px; line-height: 1.1; letter-spacing: -0.012em; color: #F0EEEB;">{{ p.name }}</b>
+                <em style="display: block; font-style: normal; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #86A8C1; margin-top: 7px;">{{ p.time }}</em>
+              </span>
+            </a>
+          </sc-for>
+        </div>
+      </div>
+
+      <div style="position: absolute; inset: 0; pointer-events: none; background: linear-gradient(to bottom, rgba(9,15,20,.5) 0, rgba(9,15,20,0) 22%, rgba(9,15,20,0) 48%, rgba(9,15,20,.82) 88%, rgba(9,15,20,.96) 100%);"></div>
+
+      <div style="position: absolute; left: 0; right: 0; top: 0; z-index: 3;">
+        <div data-rail style="max-width: 1180px; margin: 0 auto; padding: 26px 44px; display: flex; align-items: baseline; justify-content: space-between; gap: 18px; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: #9E968A;">
+          <span>Weekend Getaways</span>
+          <span style="color: #6E675D;">Aug 2026</span>
+        </div>
+      </div>
+
+      <div style="position: absolute; left: 0; right: 0; bottom: 0; z-index: 3;">
+        <div data-rail style="max-width: 1180px; margin: 0 auto; padding: 0 44px;">
+          <div data-masthead style="padding-bottom: 46px;">
+            <div style="height: 1px; background: linear-gradient(to right, rgba(134,168,193,.7), rgba(134,168,193,0) 58%); margin-bottom: 26px;"></div>
+            <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 32px; flex-wrap: wrap;">
+              <h1 style="font-family: Newsreader, Georgia, serif; font-weight: 200; font-size: clamp(46px, 8vw, 104px); line-height: 0.94; letter-spacing: -0.032em; margin: 0; color: #F0EEEB; text-shadow: 0 2px 50px rgba(9,15,20,.75);">Weekend<br><span style="font-style: italic; font-weight: 200; padding-left: 0.06em;">Getaways</span></h1>
+              <div style="display: flex; align-items: center; gap: 10px; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #6E675D; padding-bottom: 14px;">
+                <span>Scroll</span>
+                <span style="display: inline-block; animation: hint 2.6s ease-in-out infinite;">↓</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div style="position: sticky; top: 0; z-index: 30; background: rgba(9,15,20,.84); backdrop-filter: blur(18px) saturate(1.25); -webkit-backdrop-filter: blur(18px) saturate(1.25); border-bottom: 1px solid #1D3040;">
+      <div ref="{{ progressRef }}" style="position: absolute; left: 0; top: 0; height: 1px; width: 0%; background: #86A8C1; transition: width 120ms linear;"></div>
+      <div data-rail style="max-width: 1180px; margin: 0 auto; padding: 0 44px; display: flex; align-items: center; justify-content: space-between; gap: 24px; height: 56px;">
+        <a href="#index" style="font-family: Newsreader, Georgia, serif; font-size: 17px; color: #F0EEEB; letter-spacing: -0.01em; white-space: nowrap;">Weekend Getaways</a>
+        <div style="display: flex; gap: 24px; align-items: center; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none;">
+          <sc-for list="{{ places }}" as="place" hint-placeholder-count="5">
+            <a href="{{ place.href }}" data-nav="{{ place.id }}" style="font-size: 13px; color: #847D71; white-space: nowrap; padding: 5px 0; border-bottom: 1px solid transparent; transition: color 200ms ease, border-color 200ms ease;" style-hover="color: #F0EEEB;">{{ place.name }}</a>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+
+    <div data-dots style="position: fixed; right: 26px; top: 50%; transform: translateY(-50%); z-index: 28; display: grid; gap: 18px; justify-items: end;">
+      <sc-for list="{{ places }}" as="place" hint-placeholder-count="5">
+        <a href="{{ place.href }}" data-dot="{{ place.id }}" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
+          <span data-dot-label style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #847D71; opacity: 0; transform: translateX(6px); transition: opacity 260ms ease, transform 260ms ease; white-space: nowrap;">{{ place.name }}</span>
+          <span data-dot-mark style="width: 7px; height: 7px; border: 1px solid #3C5567; border-radius: 50%; transition: background 260ms ease, border-color 260ms ease, transform 260ms ease;"></span>
+        </a>
+      </sc-for>
+    </div>
+
+    <div id="index" data-rail style="max-width: 1180px; margin: 0 auto; padding: 96px 44px 0; scroll-margin-top: 56px;">
+      <div data-idxhead style="display: grid; grid-template-columns: 34px minmax(0, 1.1fr) 160px minmax(0, 1.45fr); gap: 0 24px; padding: 0 0 14px; border-bottom: 1px solid #3C5567; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #6E675D;">
+        <div>№</div><div>Place</div><div>Getting there</div><div>What's there</div>
+      </div>
+      <sc-for list="{{ places }}" as="place" hint-placeholder-count="5">
+        <a href="{{ place.href }}" data-row data-idxrow onMouseEnter="{{ place.onRowEnter }}" onMouseMove="{{ onRowMove }}" onMouseLeave="{{ onRowLeave }}" style="display: grid; grid-template-columns: 34px minmax(0, 1.1fr) 160px minmax(0, 1.45fr); gap: 0 24px; align-items: baseline; padding: 24px 14px 24px 0; margin-right: -14px; border-bottom: 1px solid #1D3040; text-decoration: none; transition: background 260ms ease, padding-left 320ms cubic-bezier(0.16,0.8,0.28,1);" style-hover="background: rgba(240,238,235,.035); padding-left: 14px;">
+          <div data-rownum style="font-size: 11px; color: #3C5567; font-variant-numeric: tabular-nums; letter-spacing: 0.1em; transition: color 260ms ease;">{{ place.num }}</div>
+          <div>
+            <div data-rowname style="font-family: Newsreader, Georgia, serif; font-weight: 300; font-size: 27px; line-height: 1.12; letter-spacing: -0.018em; color: #F0EEEB; transition: color 260ms ease;">{{ place.name }}</div>
+            <div style="font-size: 12.5px; letter-spacing: 0.06em; color: #847D71; margin-top: 7px;">{{ place.region }}</div>
+          </div>
+          <div data-idxtime style="font-size: 15.5px; color: #86A8C1; white-space: nowrap; font-variant-numeric: tabular-nums;">{{ place.time }}</div>
+          <div style="font-size: 15.5px; line-height: 1.5; color: #9E968A; font-weight: 300; text-wrap: pretty;">{{ place.blurb }}</div>
+        </a>
+      </sc-for>
+    </div>
+
+    <sc-for list="{{ places }}" as="place" hint-placeholder-count="5">
+      <section id="{{ place.id }}" data-sec data-section="{{ place.id }}" style="padding: 124px 0 0; scroll-margin-top: 56px; position: relative;">
+        <div data-rail style="max-width: 1180px; margin: 0 auto; padding: 0 44px; position: relative;">
+
+          <div data-ghost style="position: absolute; right: 44px; top: -158px; font-family: Newsreader, Georgia, serif; font-weight: 200; font-size: 132px; line-height: 1; color: rgba(240,238,235,.05); pointer-events: none; user-select: none; letter-spacing: -0.04em;">{{ place.num }}</div>
+
+          <div data-reveal data-sechead style="display: flex; align-items: flex-end; justify-content: space-between; gap: 32px; flex-wrap: wrap; padding-bottom: 24px; border-bottom: 1px solid #2A4152; position: relative;">
+            <div>
+              <div style="font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: #6E675D; margin-bottom: 18px;">{{ place.eyebrow }}</div>
+              <h2 style="font-family: Newsreader, Georgia, serif; font-weight: 200; font-size: clamp(38px, 5.4vw, 66px); line-height: 0.98; letter-spacing: -0.028em; margin: 0; color: #F0EEEB;">{{ place.name }}</h2>
+            </div>
+            <div data-meta style="display: flex; gap: 42px; padding-bottom: 8px;">
+              <div style="white-space: nowrap;">
+                <div style="font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase; color: #3C5567; margin-bottom: 9px;">Door to door</div>
+                <div style="font-size: 17px; color: #86A8C1; font-variant-numeric: tabular-nums;">{{ place.time }}</div>
+              </div>
+              <div>
+                <div style="font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase; color: #3C5567; margin-bottom: 9px;">How</div>
+                <div style="font-size: 17px; color: #BAB5AB;">{{ place.mode }}</div>
+              </div>
+            </div>
+          </div>
+
+          <sc-if value="{{ place.isA }}" hint-placeholder-val="{{ true }}">
+            <div data-reveal data-mosaic style="display: grid; grid-template-columns: 1.68fr 1fr; gap: 14px; margin-top: 36px; height: min(62vh, 540px);">
+              <div data-mbig onClick="{{ place.p0.open }}" style="overflow: hidden; cursor: zoom-in; background: #152430;">
+                <img src="{{ place.p0.img }}" alt="{{ place.name }}" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.9) saturate(0.95); transition: transform 1200ms cubic-bezier(0.16,0.8,0.28,1), filter 700ms ease;" style-hover="transform: scale(1.05); filter: brightness(1) saturate(1);">
+              </div>
+              <div data-mstack style="display: grid; grid-template-rows: 1fr 1fr; gap: 14px; min-height: 0;">
+                <div data-mcell onClick="{{ place.p1.open }}" style="overflow: hidden; cursor: zoom-in; background: #152430; min-height: 0;">
+                  <img src="{{ place.p1.img }}" alt="{{ place.name }}" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.9) saturate(0.95); transition: transform 1200ms cubic-bezier(0.16,0.8,0.28,1), filter 700ms ease;" style-hover="transform: scale(1.06); filter: brightness(1) saturate(1);">
+                </div>
+                <div data-mpair style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; min-height: 0;">
+                  <div onClick="{{ place.p2.open }}" style="overflow: hidden; cursor: zoom-in; background: #152430;">
+                    <img src="{{ place.p2.img }}" alt="{{ place.name }}" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.9) saturate(0.95); transition: transform 1200ms cubic-bezier(0.16,0.8,0.28,1), filter 700ms ease;" style-hover="transform: scale(1.06); filter: brightness(1) saturate(1);">
+                  </div>
+                  <div onClick="{{ place.p3.open }}" style="overflow: hidden; cursor: zoom-in; background: #152430;">
+                    <img src="{{ place.p3.img }}" alt="{{ place.name }}" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.9) saturate(0.95); transition: transform 1200ms cubic-bezier(0.16,0.8,0.28,1), filter 700ms ease;" style-hover="transform: scale(1.06); filter: brightness(1) saturate(1);">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </sc-if>
+          <sc-if value="{{ place.isB }}" hint-placeholder-val="{{ false }}">
+            <div data-reveal data-mosaic data-b style="display: grid; grid-template-columns: 1fr 1.68fr; gap: 14px; margin-top: 36px; height: min(62vh, 540px);">
+              <div data-mstack style="display: grid; grid-template-rows: 1fr 1fr; gap: 14px; min-height: 0;">
+                <div data-mpair style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; min-height: 0;">
+                  <div onClick="{{ place.p2.open }}" style="overflow: hidden; cursor: zoom-in; background: #152430;">
+                    <img src="{{ place.p2.img }}" alt="{{ place.name }}" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.9) saturate(0.95); transition: transform 1200ms cubic-bezier(0.16,0.8,0.28,1), filter 700ms ease;" style-hover="transform: scale(1.06); filter: brightness(1) saturate(1);">
+                  </div>
+                  <div onClick="{{ place.p3.open }}" style="overflow: hidden; cursor: zoom-in; background: #152430;">
+                    <img src="{{ place.p3.img }}" alt="{{ place.name }}" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.9) saturate(0.95); transition: transform 1200ms cubic-bezier(0.16,0.8,0.28,1), filter 700ms ease;" style-hover="transform: scale(1.06); filter: brightness(1) saturate(1);">
+                  </div>
+                </div>
+                <div data-mcell onClick="{{ place.p1.open }}" style="overflow: hidden; cursor: zoom-in; background: #152430; min-height: 0;">
+                  <img src="{{ place.p1.img }}" alt="{{ place.name }}" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.9) saturate(0.95); transition: transform 1200ms cubic-bezier(0.16,0.8,0.28,1), filter 700ms ease;" style-hover="transform: scale(1.06); filter: brightness(1) saturate(1);">
+                </div>
+              </div>
+              <div data-mbig onClick="{{ place.p0.open }}" style="overflow: hidden; cursor: zoom-in; background: #152430;">
+                <img src="{{ place.p0.img }}" alt="{{ place.name }}" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.9) saturate(0.95); transition: transform 1200ms cubic-bezier(0.16,0.8,0.28,1), filter 700ms ease;" style-hover="transform: scale(1.05); filter: brightness(1) saturate(1);">
+              </div>
+            </div>
+          </sc-if>
+
+          <div data-plate style="position: relative; margin-top: 34px; padding: 40px 40px 40px; background: linear-gradient(180deg, rgba(255,255,255,.045) 0%, rgba(255,255,255,.018) 40%, rgba(255,255,255,.008) 100%); border: 1px solid rgba(255,255,255,.07); box-shadow: 0 30px 90px rgba(4,8,11,.45), inset 0 1px 0 rgba(255,255,255,.06);">
+          <div data-cols2 style="display: grid; grid-template-columns: 1.02fr 1fr; gap: 72px; margin-top: 0; align-items: start;">
+            <div data-reveal style="display: grid; gap: 48px;">
+              <div>
+                <h3 style="font-size: 11px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: #847D71; margin: 0 0 4px; padding-bottom: 12px; border-bottom: 1px solid #2A4152;">Getting there</h3>
+                <sc-for list="{{ place.transit }}" as="leg" hint-placeholder-count="2">
+                  <div style="display: grid; grid-template-columns: 104px 1fr; gap: 18px; padding: 16px 0; border-bottom: 1px solid #152430;">
+                    <div style="font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: #86A8C1; padding-top: 3px;">{{ leg.label }}</div>
+                    <div style="font-size: 15.5px; font-weight: 300; line-height: 1.55; color: #BAB5AB; text-wrap: pretty;">{{ leg.text }}</div>
+                  </div>
+                </sc-for>
+              </div>
+              <sc-if value="{{ place.hasStay }}" hint-placeholder-val="{{ true }}">
+                <div>
+                  <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding-bottom: 12px; border-bottom: 1px solid #2A4152;">
+                    <h3 style="font-size: 11px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: #847D71; margin: 0;">Where to stay</h3>
+                    <span style="font-size: 11px; color: #3C5567; font-variant-numeric: tabular-nums;">{{ place.stayCount }}</span>
+                  </div>
+                  <sc-for list="{{ place.stay }}" as="item" hint-placeholder-count="2">
+                    <a href="{{ item.url }}" target="_blank" rel="noopener" data-item style="display: grid; grid-template-columns: 76px minmax(0, 1fr) auto; gap: 18px; align-items: center; padding: 14px 10px 14px 0; border-bottom: 1px solid #152430; text-decoration: none; transition: background 240ms ease, padding-left 240ms ease;" style-hover="background: rgba(240,238,235,.035); padding-left: 10px;">
+                      <span data-thumbwrap style="display: block; width: 76px; height: 56px; overflow: hidden; background: #152430;">
+                        <img data-item-thumb src="{{ item.img }}" alt="{{ item.name }}" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.9); transition: filter 400ms ease, transform 700ms cubic-bezier(0.16,0.8,0.28,1);">
+                      </span>
+                      <span style="min-width: 0;">
+                        <b data-item-name style="display: block; font-size: 15.5px; font-weight: 500; color: #D7D3CC; letter-spacing: -0.006em; transition: color 240ms ease;">{{ item.name }}</b>
+                        <em style="display: block; font-style: normal; font-size: 13px; font-weight: 300; line-height: 1.5; color: #9E968A; margin-top: 4px;">{{ item.note }}</em>
+                      </span>
+                      <span style="font-size: 13px; color: #847D71; font-variant-numeric: tabular-nums; letter-spacing: 0.04em;">{{ item.rating }}</span>
+                    </a>
+                  </sc-for>
+                </div>
+              </sc-if>
+              <div data-reveal data-map style="margin-top: 0; border: 1px solid #1D3040; background: #12202A;">
+            <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="{{ place.mapTitle }}" src="{{ place.mapSrc }}" style="display: block; width: 100%; aspect-ratio: 4/3; border: 0; filter: grayscale(0.45) invert(0.92) hue-rotate(180deg) brightness(0.9) contrast(0.95);"></iframe>
+            <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 14px 16px; font-size: 12px; color: #6E675D; border-top: 1px solid #1D3040;">
+              <span style="letter-spacing: 0.12em; text-transform: uppercase;">{{ place.name }}</span>
+              <a href="{{ place.mapLink }}" target="_blank" rel="noopener" style="color: #86A8C1; border-bottom: 1px solid rgba(134,168,193,.35); padding-bottom: 2px;" style-hover="color: #C9D8E2;">Open in Google Maps</a>
+            </div>
+          </div>
+            </div>
+
+            <div data-reveal style="display: grid; gap: 48px;">
+              <div>
+                <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding-bottom: 12px; border-bottom: 1px solid #2A4152;">
+                  <h3 style="font-size: 11px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: #847D71; margin: 0;">Worth the stop</h3>
+                  <span style="font-size: 11px; color: #3C5567; font-variant-numeric: tabular-nums;">{{ place.stopsCount }}</span>
+                </div>
+                <sc-for list="{{ place.stops }}" as="item" hint-placeholder-count="4">
+                  <a href="{{ item.url }}" target="_blank" rel="noopener" data-item style="display: grid; grid-template-columns: 76px minmax(0, 1fr) auto; gap: 18px; align-items: center; padding: 14px 10px 14px 0; border-bottom: 1px solid #152430; text-decoration: none; transition: background 240ms ease, padding-left 240ms ease;" style-hover="background: rgba(240,238,235,.035); padding-left: 10px;">
+                    <span data-thumbwrap style="display: block; width: 76px; height: 56px; overflow: hidden; background: #152430;">
+                      <img data-item-thumb src="{{ item.img }}" alt="{{ item.name }}" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.9); transition: filter 400ms ease, transform 700ms cubic-bezier(0.16,0.8,0.28,1);">
+                    </span>
+                    <span style="min-width: 0;">
+                      <b data-item-name style="display: block; font-size: 15.5px; font-weight: 500; color: #D7D3CC; letter-spacing: -0.006em; transition: color 240ms ease;">{{ item.name }}</b>
+                      <em style="display: block; font-style: normal; font-size: 13px; font-weight: 300; line-height: 1.5; color: #9E968A; margin-top: 4px;">{{ item.note }}</em>
+                    </span>
+                    <span style="font-size: 13px; color: #847D71; font-variant-numeric: tabular-nums; letter-spacing: 0.04em;">{{ item.rating }}</span>
+                  </a>
+                </sc-for>
+              </div>
+              <div>
+                <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding-bottom: 12px; border-bottom: 1px solid #2A4152;">
+                  <h3 style="font-size: 11px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: #847D71; margin: 0;">Eating</h3>
+                  <span style="font-size: 11px; color: #3C5567; font-variant-numeric: tabular-nums;">{{ place.eatCount }}</span>
+                </div>
+                <sc-for list="{{ place.eat }}" as="item" hint-placeholder-count="2">
+                  <a href="{{ item.url }}" target="_blank" rel="noopener" data-item style="display: grid; grid-template-columns: 76px minmax(0, 1fr) auto; gap: 18px; align-items: center; padding: 14px 10px 14px 0; border-bottom: 1px solid #152430; text-decoration: none; transition: background 240ms ease, padding-left 240ms ease;" style-hover="background: rgba(240,238,235,.035); padding-left: 10px;">
+                    <span data-thumbwrap style="display: block; width: 76px; height: 56px; overflow: hidden; background: #152430;">
+                      <img data-item-thumb src="{{ item.img }}" alt="{{ item.name }}" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.9); transition: filter 400ms ease, transform 700ms cubic-bezier(0.16,0.8,0.28,1);">
+                    </span>
+                    <span style="min-width: 0;">
+                      <b data-item-name style="display: block; font-size: 15.5px; font-weight: 500; color: #D7D3CC; letter-spacing: -0.006em; transition: color 240ms ease;">{{ item.name }}</b>
+                      <em style="display: block; font-style: normal; font-size: 13px; font-weight: 300; line-height: 1.5; color: #9E968A; margin-top: 4px;">{{ item.note }}</em>
+                    </span>
+                    <span style="font-size: 13px; color: #847D71; font-variant-numeric: tabular-nums; letter-spacing: 0.04em;">{{ item.rating }}</span>
+                  </a>
+                </sc-for>
+              </div>
+            </div>
+          </div>
+
+          
+          </div>
+        </div>
+      </section>
+    </sc-for>
+
+    <footer data-rail style="max-width: 1180px; margin: 0 auto; padding: 116px 44px 64px;">
+      <div style="height: 1px; background: linear-gradient(to right, rgba(134,168,193,.5), rgba(55,52,47,.9) 40%, rgba(55,52,47,0));"></div>
+    </footer>
+  </div>
+
+  <div data-peek ref="{{ peekRef }}" style="position: fixed; z-index: 35; top: 0; left: 0; width: 214px; height: 150px; pointer-events: none; opacity: 0; transform: translate3d(-9999px, -9999px, 0) scale(0.96); transition: opacity 240ms ease, transform 240ms cubic-bezier(0.16,0.8,0.28,1); box-shadow: 0 26px 70px rgba(0,0,0,.6); border: 1px solid #2A4152; background-size: cover; background-position: center;"></div>
+
+  <template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240"><rect width="240" height="240" fill="#12202A"/><circle cx="120" cy="120" r="52" fill="none" stroke="#86A8C1" stroke-width="6"/><text x="120" y="136" text-anchor="middle" font-family="Georgia, serif" font-size="46" fill="#F0EEEB">WG</text></svg></template>
+
+  <sc-if value="{{ lightbox.on }}" hint-placeholder-val="{{ false }}">
+    <div data-lb onClick="{{ lightbox.close }}" style="position: fixed; inset: 0; z-index: 99; background: rgba(8,13,18,.975); backdrop-filter: blur(7px); -webkit-backdrop-filter: blur(7px); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 68px 20px 112px; animation: fadein 220ms ease both;">
+      <img src="{{ lightbox.img }}" alt="" style="max-width: 100%; max-height: 100%; object-fit: contain; animation: lbin 340ms cubic-bezier(0.16,0.8,0.28,1) both; box-shadow: 0 40px 120px rgba(0,0,0,.6);">
+      <button onClick="{{ lightbox.close }}" style="position: absolute; top: 16px; right: 18px; background: none; border: 0; cursor: pointer; color: #9E968A; font-family: 'Inter Tight', sans-serif; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; padding: 14px;" style-hover="color: #F0EEEB;">Close</button>
+      <button onClick="{{ lightbox.prev }}" style="position: absolute; left: 6px; top: 50%; transform: translateY(-50%); background: none; border: 0; cursor: pointer; color: #847D71; font-size: 30px; padding: 20px; line-height: 1;" style-hover="color: #F0EEEB;">‹</button>
+      <button onClick="{{ lightbox.next }}" style="position: absolute; right: 6px; top: 50%; transform: translateY(-50%); background: none; border: 0; cursor: pointer; color: #847D71; font-size: 30px; padding: 20px; line-height: 1;" style-hover="color: #F0EEEB;">›</button>
+      <div style="position: absolute; bottom: 24px; left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 12px;">
+        <sc-for list="{{ lightbox.thumbs }}" as="t" hint-placeholder-count="4">
+          <img src="{{ t.img }}" alt="" onClick="{{ t.go }}" style="width: 52px; height: 36px; object-fit: cover; cursor: pointer; opacity: {{ t.opacity }}; transition: opacity 200ms ease;" style-hover="opacity: 1;">
+        </sc-for>
+        <span style="font-size: 11px; letter-spacing: 0.16em; color: #6E675D; font-variant-numeric: tabular-nums; margin-left: 6px;">{{ lightbox.counter }}</span>
+      </div>
+    </div>
+  </sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;: {&quot;width&quot;: 1440}}">
+const G = "https://www.google.com/maps/search/?api=1&query=";
+const PLACES = [
+  {
+    id: "e-cat", name: "Catskill", region: "New York", time: "2h 15m", mode: "Car or Amtrak",
+    eyebrow: "Hudson Valley · New York",
+    blurb: "Waterfalls, hiking, and the Hudson River towns just across the bridge.",
+    photos: ["img/cat1.webp", "img/kaat.webp", "img/cat3.webp", "img/tann.webp"],
+    coords: "42.2176,-73.8646", zoom: 11,
+    transit: [
+      { label: "By car", text: "115 miles up I-87. About 2 hr 15 min." },
+      { label: "By train", text: "Amtrak Empire Service to Hudson, about 2 hours. Catskill is ten minutes across the bridge." }
+    ],
+    stay: [{ img: "img/scat.webp", name: "Catskill Creek, deck and views", note: "Townhouse, 2 beds", rating: "4.89", url: "https://www.airbnb.com/rooms/1455803813415829455" }],
+    stops: [
+      { img: "img/v_kaat.webp", name: "Kaaterskill Falls", note: "Two-tiered waterfall dropping 260 feet through a wooded clove, reached by a steep trail and viewing platform.", rating: "4.7", url: G + "Kaaterskill%20Falls" },
+      { img: "img/v_cole.webp", name: "Thomas Cole National Historic Site", note: "Preserved home and studio of the painter who founded the Hudson River School, with period rooms and exhibitions.", rating: "4.5", url: G + "Thomas%20Cole%20National%20Historic%20Site" },
+      { img: "img/v_tann.webp", name: "Tannersville", note: "Mountain village of brightly painted storefronts, galleries and coffee shops below Hunter Mountain.", rating: "", url: G + "Tannersville%20NY" },
+      { img: "img/v_catmtn.webp", name: "Catskill Mountains", note: "Protected range of high peaks, trout streams and fire-tower summits laced with hiking trails.", rating: "4.8", url: G + "Catskill%20Mountains" }
+    ],
+    eat: [{ img: "img/v_ambrosia.webp", name: "Ambrosia Diner", note: "Long-running roadside diner serving Greek-American plates, all-day breakfast and house-made pies.", rating: "4.2", url: G + "Ambrosia%20Diner%20Catskill" }]
+  },
+  {
+    id: "e-wg", name: "Watkins Glen", region: "New York", time: "4h 20m", mode: "Car only",
+    eyebrow: "Finger Lakes · New York",
+    blurb: "A gorge trail past nineteen waterfalls, with wineries along Seneca Lake.",
+    photos: ["img/wg_rainbow.png", "img/wg1.webp", "img/wg2.webp", "img/wg3.webp"],
+    coords: "42.3806,-76.8733", zoom: 13,
+    transit: [
+      { label: "By car", text: "240 miles west. About 4 hr 20 min." },
+      { label: "By train", text: "No passenger rail reaches Watkins Glen." }
+    ],
+    stay: [{ img: "img/swg.webp", name: "Direct park access, 7 acres", note: "Earthen home, 3 beds", rating: "5.0", url: "https://www.airbnb.com/rooms/1344213047910045586" }],
+    stops: [
+      { img: "img/v_wgsp.webp", name: "Watkins Glen State Park", note: "State park built around a narrow gorge, with stone stairways and footbridges threading past nineteen waterfalls.", rating: "4.8", url: G + "Watkins%20Glen%20State%20Park" },
+      { img: "img/v_grisch.webp", name: "Castel Grisch Winery", note: "Hillside winery and restaurant pouring Rieslings and reds on a terrace above Seneca Lake.", rating: "4.5", url: G + "Castel%20Grisch%20Winery" }
+    ],
+    eat: [
+      { img: "img/v_shs.webp", name: "Seneca Harbor Station", note: "Seafood and steaks in a restored 1876 railroad depot, with dockside tables on the lake.", rating: "4.6", url: G + "Seneca%20Harbor%20Station" },
+      { img: "img/v_jerl.webp", name: "Jerlando's Ristorante & Pizza Co.", note: "Casual Italian-American kitchen known for thin-crust pizza, baked pastas and local beer on tap.", rating: "4.5", url: G + "Jerlando%27s%20Ristorante" }
+    ]
+  },
+  {
+    id: "e-zion", name: "Zion", region: "Utah", time: "Fly + 2h 30m", mode: "Fly, then drive",
+    eyebrow: "Southwest · Utah",
+    blurb: "Red rock canyons in southern Utah. The Narrows is a hike up the river itself.",
+    photos: ["img/zion1.webp", "img/zion2.webp", "img/zion3.webp", "img/zion4.webp"],
+    coords: "37.2982,-113.0263", zoom: 11,
+    transit: [
+      { label: "By air", text: "JFK or Newark to Las Vegas, 5 hr 20 min nonstop." },
+      { label: "Then by car", text: "160 miles to Springdale, about 2 hr 30 min. St George airport is 45 minutes out." }
+    ],
+    stay: [
+      { img: "img/sz1.webp", name: "Zion Luxury Loft", note: "Springdale, walk to the park", rating: "4.93", url: "https://www.airbnb.com/rooms/781075498891815550" },
+      { img: "img/sz2.webp", name: "Zion Loft, walk to park", note: "Springdale, 2 bed", rating: "4.97", url: "https://www.airbnb.com/rooms/1041589459957366974" },
+      { img: "img/sz3.webp", name: "Deer Ridge", note: "Orderville, hot tub", rating: "4.99", url: "https://www.airbnb.com/rooms/853633315462541845" },
+      { img: "img/sz4.webp", name: "Mother Eve Tiny House", note: "Virgin, 20 min west", rating: "4.92", url: "https://www.airbnb.com/rooms/37373006" },
+      { img: "img/sz5.webp", name: "Narrows A-Frame", note: "Hildale, sauna", rating: "4.9", url: "https://www.airbnb.com/rooms/39253209" }
+    ],
+    stops: [
+      { img: "img/v_narrows.webp", name: "The Narrows", note: "Slot canyon hiked in the Virgin River itself, with walls rising a thousand feet on either side.", rating: "4.9", url: G + "The%20Narrows%20Zion" },
+      { img: "img/v_cover.webp", name: "Canyon Overlook Trail", note: "Short cliffside trail across slickrock to a railed viewpoint over lower Zion Canyon.", rating: "4.8", url: G + "Canyon%20Overlook%20Trail" },
+      { img: "img/zion3.webp", name: "Angels Landing", note: "Steep switchback climb finishing along a chain-assisted sandstone fin high above the canyon floor.", rating: "", url: G + "37.269,-112.9469" },
+      { img: "img/zion1.webp", name: "Zion Canyon shuttle", note: "Free park bus along the scenic drive, stopping at every major trailhead in the canyon.", rating: "", url: G + "37.2,-112.9871" }
+    ],
+    eat: [{ img: "img/v_springdale.webp", name: "Springdale", note: "Gateway town of cafes, taco stands, galleries and outfitters along the road to the south entrance.", rating: "", url: G + "37.1889,-112.9986" }]
+  },
+  {
+    id: "e-paris", name: "Paris", region: "France", time: "7h flight", mode: "Nonstop from JFK",
+    eyebrow: "Île-de-France · France",
+    blurb: "Cafes, wine bars, and the museums, with the city best seen on foot.",
+    photos: ["img/paris_opera.png", "img/paris1.webp", "img/paris_louvre.png", "img/paris3.webp"],
+    coords: "48.8566,2.34", zoom: 13,
+    transit: [{ label: "By air", text: "JFK to Charles de Gaulle, about 7 hours nonstop. An overnight departure lands in the morning." }],
+    stay: [],
+    stops: [
+      { img: "img/v_orsay.webp", name: "Musee d'Orsay", note: "Impressionist and post-impressionist masterworks inside a vast Beaux-Arts railway station on the Left Bank.", rating: "4.8", url: G + "Musee%20d%27Orsay" },
+      { img: "img/v_sacre.jpg", name: "Basilique du Sacre-Coeur", note: "White-domed hilltop basilica in Montmartre, with a mosaic apse and sweeping views across the city.", rating: "4.7", url: G + "Basilique%20du%20Sacre-Coeur" },
+      { img: "img/v_chapelle.jpg", name: "Sainte-Chapelle", note: "Gothic royal chapel whose upper level is walled almost entirely in 13th-century stained glass.", rating: "4.6", url: G + "Sainte-Chapelle" },
+      { img: "img/v_lux.webp", name: "Jardin du Luxembourg", note: "Formal palace gardens with gravel allees, a fountain basin for model sailboats and green metal chairs.", rating: "4.7", url: G + "Jardin%20du%20Luxembourg" }
+    ],
+    eat: [
+      { img: "img/v_flore.jpg", name: "Cafe de Flore", note: "Art Deco literary cafe with a red-awning terrace, known for omelettes and thick hot chocolate.", rating: "3.9", url: G + "Cafe%20de%20Flore" },
+      { img: "img/paris3.webp", name: "Les Deux Magots", note: "Belle Epoque cafe on the square, once the haunt of writers and painters, still serving classic brasserie fare.", rating: "4.2", url: G + "Les%20Deux%20Magots" },
+      { img: "img/v_baron.jpg", name: "Le Baron Rouge", note: "Standing-room wine bar beside the Aligre market, pouring from the barrel with charcuterie and oysters.", rating: "4.7", url: G + "Le%20Baron%20Rouge" },
+      { img: "img/v_breizh.jpg", name: "Breizh Cafe", note: "Breton creperie in the Marais serving buckwheat galettes and sweet crepes with bowls of cider.", rating: "4.3", url: G + "Breizh%20Cafe" }
+    ]
+  },
+  {
+    id: "e-ct", name: "Mystic / East Lyme", region: "Connecticut", time: "2h 5m", mode: "Car or Amtrak",
+    eyebrow: "Long Island Sound · Connecticut",
+    blurb: "Beaches and boardwalk on Long Island Sound, with the seaport at Mystic.",
+    photos: ["img/ct1.webp", "img/ct2.webp", "img/ct3.webp", "img/ct4.webp"],
+    coords: "41.34,-72.1", zoom: 11,
+    transit: [
+      { label: "By car", text: "125 miles up I-95. About 2 hr 5 min." },
+      { label: "By train", text: "Amtrak Northeast Regional to New London, about 2 hr 30 min, nine services a day. The line continues to Mystic." }
+    ],
+    stay: [{ img: "img/sct.webp", name: "Panoramic Point Tiny House", note: "Tiny home, 1 bed", rating: "5.0", url: "https://www.airbnb.com/rooms/1298599457062072033" }],
+    stops: [
+      { img: "img/v_mystic.webp", name: "Mystic Seaport Museum", note: "Maritime museum with a re-created 19th-century village and historic tall ships you can board.", rating: "4.6", url: G + "Mystic%20Seaport%20Museum" },
+      { img: "img/v_rocky.webp", name: "Rocky Neck State Park", note: "Crescent beach on the Sound backed by salt marsh, a boardwalk and a stone pavilion.", rating: "4.6", url: G + "Rocky%20Neck%20State%20Park" },
+      { img: "img/v_bookbarn.webp", name: "The Book Barn", note: "Sprawling used-book shop spread across several barns and gardens, with resident cats and goats.", rating: "4.8", url: G + "The%20Book%20Barn" },
+      { img: "img/v_hark.webp", name: "Harkness Memorial State Park", note: "Italianate seaside mansion surrounded by formal gardens and a lawn running down to the water.", rating: "4.8", url: G + "Harkness%20Memorial%20State%20Park" },
+      { img: "img/v_niantic.webp", name: "Niantic Boardwalk", note: "Mile-long waterfront boardwalk along the beach and rail line, with benches and a fishing pier.", rating: "4.7", url: G + "Niantic%20Boardwalk" }
+    ],
+    eat: [
+      { img: "img/v_otw.webp", name: "On The Waterfront", note: "Neighborhood Italian seafood house on the Thames River, known for lobster fra diavolo and harbor views.", rating: "4.6", url: G + "On%20The%20Waterfront%20New%20London" },
+      { img: "img/v_pauls.webp", name: "Paul's Pasta Shop", note: "Family-run counter-service spot making its own pasta daily, with river-side tables.", rating: "4.7", url: G + "Paul%27s%20Pasta%20Shop" }
+    ]
+  }
+];
+
+class Component extends DCLogic {
+  state = { lb: null };
+
+  componentDidMount() {
+    this._onKey = (e) => {
+      if (!this.state.lb) return;
+      if (e.key === "Escape") this.setState({ lb: null });
+      if (e.key === "ArrowRight") this.stepLb(1);
+      if (e.key === "ArrowLeft") this.stepLb(-1);
+    };
+    document.addEventListener("keydown", this._onKey);
+
+    this._onScroll = () => {
+      const el = document.scrollingElement || document.documentElement;
+      const max = el.scrollHeight - el.clientHeight;
+      const y = el.scrollTop;
+      if (this._progress) this._progress.style.width = (max > 0 ? (y / max) * 100 : 0).toFixed(2) + "%";
+      if (this._parallax) this._parallax.style.transform = "translate3d(0," + (-y * 0.14).toFixed(1) + "px,0)";
+    };
+    window.addEventListener("scroll", this._onScroll, { passive: true });
+    this._onScroll();
+
+    this._reveal = new IntersectionObserver((entries) => {
+      entries.forEach((en) => {
+        if (en.isIntersecting) {
+          en.target.style.opacity = "1";
+          en.target.style.transform = "none";
+          this._reveal.unobserve(en.target);
+        }
+      });
+    }, { rootMargin: "0px 0px -6% 0px", threshold: 0.04 });
+
+    this._spy = new IntersectionObserver((entries) => {
+      entries.forEach((en) => {
+        const id = en.target.getAttribute("data-section");
+        const link = document.querySelector('[data-nav="' + id + '"]');
+        const dot = document.querySelector('[data-dot="' + id + '"]');
+        const on = en.isIntersecting;
+        if (link) {
+          link.style.color = on ? "#F0EEEB" : "#847D71";
+          link.style.borderColor = on ? "#86A8C1" : "transparent";
+        }
+        if (dot) {
+          const mark = dot.querySelector("[data-dot-mark]");
+          const label = dot.querySelector("[data-dot-label]");
+          if (mark) {
+            mark.style.background = on ? "#86A8C1" : "transparent";
+            mark.style.borderColor = on ? "#86A8C1" : "#3C5567";
+            mark.style.transform = on ? "scale(1.25)" : "none";
+          }
+          if (label) {
+            label.style.opacity = on ? "1" : "0";
+            label.style.transform = on ? "translateX(0)" : "translateX(6px)";
+          }
+        }
+      });
+    }, { rootMargin: "-45% 0px -45% 0px" });
+
+    this.scan();
+    this._scanTimer = setInterval(() => this.scan(), 700);
+    setTimeout(() => clearInterval(this._scanTimer), 9000);
+  }
+
+  componentDidUpdate() { this.scan(); }
+
+  componentWillUnmount() {
+    document.removeEventListener("keydown", this._onKey);
+    window.removeEventListener("scroll", this._onScroll);
+    if (this._reveal) this._reveal.disconnect();
+    if (this._spy) this._spy.disconnect();
+    clearInterval(this._scanTimer);
+  }
+
+  scan() {
+    if (!this._reveal) return;
+    document.querySelectorAll("[data-reveal]").forEach((el) => {
+      if (el.__seen) return;
+      el.__seen = true;
+      el.style.opacity = "0";
+      el.style.transform = "translateY(20px)";
+      el.style.transition = "opacity 900ms cubic-bezier(0.16,0.8,0.28,1), transform 900ms cubic-bezier(0.16,0.8,0.28,1)";
+      this._reveal.observe(el);
+      setTimeout(() => { el.style.opacity = "1"; el.style.transform = "none"; }, 4000);
+    });
+    document.querySelectorAll("[data-section]").forEach((el) => {
+      if (el.__spied) return;
+      el.__spied = true;
+      this._spy.observe(el);
+    });
+  }
+
+  stepLb(d) {
+    this.setState((s) => {
+      if (!s.lb) return null;
+      const n = s.lb.pool.length;
+      return { lb: { pool: s.lb.pool, i: (s.lb.i + d + n) % n } };
+    });
+  }
+
+  renderVals() {
+    const open = (pool, i) => (e) => { if (e && e.stopPropagation) e.stopPropagation(); this.setState({ lb: { pool, i } }); };
+
+    const places = PLACES.map((p, idx) => {
+      const ph = (k) => ({ img: p.photos[k], open: open(p.photos, k) });
+      return {
+        ...p,
+        num: String(idx + 1).padStart(2, "0"),
+        href: "#" + p.id,
+        p0: ph(0), p1: ph(1), p2: ph(2), p3: ph(3),
+        isA: idx % 2 === 0,
+        isB: idx % 2 === 1,
+        hasStay: p.stay.length > 0,
+        stayCount: String(p.stay.length).padStart(2, "0"),
+        stopsCount: String(p.stops.length).padStart(2, "0"),
+        eatCount: String(p.eat.length).padStart(2, "0"),
+        mapTitle: "Map of " + p.name,
+        mapSrc: "https://maps.google.com/maps?q=" + p.coords + "&z=" + p.zoom + "&output=embed",
+        mapLink: G + p.coords,
+        onRowEnter: (e) => {
+          const el = this._peek;
+          if (!el) return;
+          el.style.backgroundImage = "url('" + p.photos[0] + "')";
+          el.style.opacity = "1";
+          this._movePeek(e);
+        }
+      };
+    });
+
+    const lb = this.state.lb;
+
+    return {
+      places,
+      band: [0, 1].flatMap((r) => PLACES.map((p, i) => ({
+        key: r + "-" + i, name: p.name, time: p.time, href: "#" + p.id, img: p.photos[0]
+      }))),
+      bandRef: (el) => { this._band = el; },
+      parallaxRef: (el) => { this._parallax = el; },
+      progressRef: (el) => { this._progress = el; },
+      peekRef: (el) => { this._peek = el; },
+      pauseBand: () => { if (this._band) this._band.style.animationPlayState = "paused"; },
+      resumeBand: () => { if (this._band) this._band.style.animationPlayState = "running"; },
+      onRowMove: (e) => this._movePeek(e),
+      onRowLeave: () => { if (this._peek) this._peek.style.opacity = "0"; },
+      lightbox: {
+        on: !!lb,
+        img: lb ? lb.pool[lb.i] : "",
+        counter: lb ? String(lb.i + 1).padStart(2, "0") + " / " + String(lb.pool.length).padStart(2, "0") : "",
+        thumbs: lb ? lb.pool.map((src, k) => ({
+          img: src,
+          opacity: k === lb.i ? 1 : 0.34,
+          go: (e) => { e.stopPropagation(); this.setState({ lb: { pool: lb.pool, i: k } }); }
+        })) : [],
+        close: () => this.setState({ lb: null }),
+        next: (e) => { e.stopPropagation(); this.stepLb(1); },
+        prev: (e) => { e.stopPropagation(); this.stepLb(-1); }
+      }
+    };
+  }
+
+  _movePeek(e) {
+    const el = this._peek;
+    if (!el) return;
+    const x = Math.min(e.clientX + 28, window.innerWidth - 232);
+    const y = Math.max(12, Math.min(e.clientY - 74, window.innerHeight - 170));
+    el.style.transform = "translate3d(" + x + "px," + y + "px,0) scale(1)";
+  }
+}
+</script>
+</body>
+</html>
